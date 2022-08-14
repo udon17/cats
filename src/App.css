@@ -2,8 +2,20 @@
   text-align: center;
 }
 
+.logo-wrap-cat {
+  padding-top: 24px;
+}
+
+.logo-wrap-cat img {
+  width: 50%;
+}
+
+.logo-wrap-cat img:hover {
+  object-view-box: inset(10%);
+}
+
 .App-logo {
-  height: 40vmin;
+  height: 20vmin;
   pointer-events: none;
 }
 
@@ -51,4 +63,20 @@ ul li img {
   width: 400px;
   height: 400px;
   object-fit: cover;
+  transition: 0.2s ease-out;
+  object-view-box: inset(0%);
+}
+
+ul li img:hover {
+  object-view-box: inset(10%);
+}
+
+.App-footer {
+  background-color: #282c34;
+  min-height: 10vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(24px + 2vmin);
+  color: white;
 }

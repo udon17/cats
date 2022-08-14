@@ -1,3 +1,5 @@
+import logo from './logo.svg'
+import CatIcon from './cat-icon.png'
 import CatImage1 from './cat1.jpg';
 import CatImage2 from './cat2.jpg';
 import CatImage3 from './cat3.jpg';
@@ -14,7 +16,10 @@ function App() {
   return (
     <div className="App">
       <header className="App-header">
-        love cat gallery
+        <div className='logo-wrap-cat'>
+            <img src={CatIcon} alt="cat-icon" className="cat-icon" />
+          </div>
+          <h1>love cat gallery</h1>
       </header>
       <ul>
         <li><img src={CatImage1} alt="cat1" /></li>
@@ -27,6 +32,12 @@ function App() {
         <li><img src={CatImage8} alt="cat1" /></li>
         <li><img src={CatImage9} alt="cat1" /></li>
       </ul>
+      <footer className="App-footer">
+        <div className='logo-wrap'>
+          <img src={logo} alt="logo" className="App-logo" />
+        </div>
+        <p>create by react</p>
+      </footer>
     </div>
   );
 }
